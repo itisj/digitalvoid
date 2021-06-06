@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" href="images/icon.png" sizes="16x16">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,700&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@0;1&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+/* body {
+  background-color: rgb(183, 206, 82);
+  background-repeat: repeat;
+  background-attachment: fixed;  
+  background-size: auto;
+} */
+
+body {
+    background-color: black;
+}
+
+
+/* play music */
+#button-container {  
+    width: 36px;
+    height: 36px;
+    margin: 0px auto;
+    border: 0px solid #000;
+    border-radius: 50%;
+    background-size: auto;  
+    box-shadow: 0 0.5em 0.5em rgba( 0, 0, 0, 0.3 ), 
+                0.5em 0 0.5em rgba( 0, 0, 0, 0.3 ),
+                0 -0.5em 0.5em rgba( 0, 0, 0, 0.3 ), 
+                -0.5em 0 0.5em rgba( 0, 0, 0, 0.3 );
+ } 
+
+#button {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 10% auto;
+    border: 0px solid #000;
+    border-radius: 60%;
+    background-color: rgba( 0, 0, 0, 0.5 );
+    background-image: url(images/play-pause-button3.png);
+    background-size: 100% auto;
+    cursor: pointer;
+ }
+
+.pause {
+    background-position: 0 -100%;
+ }
+
+.hide { 
+    display: none;
+ }
+
+.remove {
+    position: absolute;
+    left: -999em;
+ }
+
+
+
+.manifesto {
+    background: none;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    font-size: 12px;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 60px;
+    font-family: 'Roboto Mono', monospace, sans-serif;
+}
+
+/* footer */
+.footer {
+    background: none;
+    color: #333;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 80px;
+    padding: 16px;
+    font-family: sans-serif;
+}
+</style>
+</head>
+
+
+<body onclick="play()">
+
+<audio id="audio" src="conversation.mp3"></audio>
+
+
+
+<div class="manifesto">
+  <p style="font-size: 24px;"><b>On Digital Void?</b></p>
+  <p style="font-size: 18px;"><b>Why there is something rather than nothing? It is about representation.</b></p>
+  <p>
+    Digital cameras have become ubiquitous. Photography, known as the action of capturing images, or, the process of recording visuality, has become almost costless in this digital era—it is easier than ever to take an image in the digital format. Photographical apparatus with human’s unintentionality or human’s actions by accident; to be more radical, without human’s being, the photographical apparatus along, quote unquote “empty” digital images emerging under that condition, I call these images the Digital Void. 
+<br> <br>
+When we encounter images, digital images, and digital objects in general, under everyday conditions, under the digital milieu, this question shall be asked: why there’s something rather than nothing? This question means that attention should be paid to the common presupposition thatphotography, or images in general, are best understood through the concept of representation. <br><br>
+In Andre Bazin’s 1945 writing The Ontology of Photographical, he claims that:<br><br>
+<i>&emsp;&emsp;For the first time an image of the world is formed automatically, without the creative intervention of man…The photographical image is the object itself, the object freed from the conditions of time and space that govern it. No matter how fuzzy, distorted, or discolored, no matter how lacking in documentary value the image might be, it shares, by virtual of the very process of its becoming, the being of the model which it is the reproduction; it is the model. </i><br><br>
+It is hard to tell why he said, “an image of the world is formed automatically, without the creative intervention of man…The photographical image is the object itself”, since this paper was written 7 decades ago. He refused, from my interpretation, the existence of the image itself —the image as a format or medium. It might be understandable that Bazin concludes as such without a working understanding of digital technology or information science. “The photograph as such and the object in itself share a common being, after the fashion of a fingerprint.” This shorter quote might  be clearer than the longer one above, since it indicates an understanding  of the word model..<br><br>
+From my understanding, it is not hard to see the shadow of the Platonic idealism here when he was using the word model. Bazin’s definitive sentence, “the being of the model which it is the reproduction; it is the model” might  be reworded : the being of a tree which a photographical image is the reproduction; the photographical image is the tree. The tree here is the idea of tree, more than a specific tree, specific trees can be various, while the idea remains general. That is why I concluded that he neglect the existence of the image itself.<br><br>
+In Bazin’s view, the photographic image is an unmediated copy, or trace, of the object before the lens. For Bazin, “the photographic image and the object it represents share a common being”, and it is this representational quality of the image that gives it meaning. But what about an image (or in our case a file format such a .tiff or .jpg) that does not represent anything in particular? If we remove the representational information from an image file, what remains? In other words, what can we learn from an image with no content? <br><br>
+Revisiting Heidegger’s famous jug example in his 1950 article <i>The Thing:</i><br>
+<i>&emsp;&emsp;What in the thing is thingly? What is the thing in itself? We shall not reach the thing in itself until our thinking has first reached the thing as a thing.</i><br>
+<i>&emsp;&emsp;The jug is a thing as a vessel—it can hold something. To be sure, this container has to be made. But its being made by the potter in no way constitutes what is peculiar and proper to the jug insofar as it is qua jug. The jug is not a vessel because it was made; rather, the jug had to be made because it is this holding vessel.</i><br>
+The jug here, as an technical object, has certain form (bottom and side) and is made from specific material (here earth). However, these characters are inadequate or unable, according to Heidegger, to define the jug as the thing. What realize the jug’s fundamental “thingness” is the void inside it. And it is a mutual condition, the jug, and the void, shapes each other. The thing, here the jug, brings other things together from a distance. It is the gathering character.<br><br>
+<i>&emsp;&emsp;In what does the jug-character of the jug consist? [...] We represented the effective feature of the vessel, that which does its holding, the void, as a hollow filled with air. Conceived in terms of physical science, that is what the void really is; but it is not the jug's void. We did not let the jug's void be its own void. We paid no heed to that in the vessel which does the containing. We have given no thought to how the containing itself goes on. […] We failed to give thought to what the jug holds and how it holds.</i><br>
+<i>&emsp;&emsp;How does the jug's void hold? It holds by taking what is poured in. It holds by keeping and retaining what it took in. The void holds in a twofold manner: taking and keeping.</i> <br>
+<i>&emsp;&emsp;The jug's essential nature, its presencing, so experienced and thought of in these terms, is what we call thing. We are now thinking this word by way of the gathering-appropriating staying of the fourfold. </i><br>
+<i>&emsp;&emsp;At the same time we recall the Old High German word thing. This reference to the history of language could easily tempt us to misunderstand the way in which we are now thinking of the nature of the thing. […] Neither the general, long outworn meaning of the term “thing,” as used in philosophy, nor the Old High German meaning of the word thing, however, are of the least help to us in our pressing need to discover and give adequate thought to the essential source of what we are now saying about the nature of the jug. However, one semantic factor in the old usage of the word thing, namely “gathering,” does speak to the nature of the jug as we earlier had it in mind.</i><br><br>
+The jug example links to my concern on these quote unquote empty digital images or the Digital Void. Rethinking about Bazin’s claim: “the photography, and the object it represents share a common being”. Here, the word being is worth attention. For Heidegger, being and Being are different, the former one is about ontologies, which concerns representation, the later one, with the capital B, is about what Heidegger called the fundamental Ontology, which links to the void and jug-character in his example. In Yuk Hui’s book On The Existence of Digital Objects, he explains that difference, in his words: <br><br>
+<i>&emsp;&emsp;Ontology was formulated by Aristotle as “being qua being,” or more precisely, “a discipline which studies that which is, insofar as it is, and those features that it has in its own right.” The development of ontology can be summarized…in terms of ontologies and Ontology. The former designates theory of formalization and representation; the latter refers to what Heidegger calls fundamental ontology. The former concerns being (Seiendes); the latter concerns Being (Sein). On its surface, this constitutes an opposition between Ontology and ontologies (or ontics, in Heidegger’s terms). </i><br><br>
+Yuk Hui introduced the term “Ontogenesis” along with the discussion on Ontologies versus Ontology. To understand his discussion here, it is necessary to clarify what is the method of orders of magnitude. His interpretation of the order of magnitude comes mainly from Gaston Bachelard and Gilbert Simondon, though this method of analysis also distinguishes itself from those of Bachelard and Simondon. Bachelard defines the order of magnitude as follows:<br><br>
+<i>&emsp;&emsp;At the school of science, one learns to think in agreement with the order of magnitude of the phenomenon being studied. […] This order of magnitude can be considered a first level of verification. In itself, it may often appear as sufficient proof. Not only does it justify a method, but as absurd as the atmosphere that surrounds it, it appears as the sign of an existence, a decisive mark of the ontological faith of the physician, and it is even more striking as the imprecision of the being outlined is larger.</i><br><br>
+Further, Yuk Hui mentioned that analyzing the world with absolute precision is impossible; rather, one may do so relatively. One part of the reason is that the orders of magnitude may give us different bodies of knowledge that appear to be exclusive to one another. In his own word, “A certain order of granularity is a selected reality.” In engineering, people tend to use the level of abstraction to reduce complexities into understandable terms: <br><br>
+<i>&emsp;&emsp;it starts from a problem and divides it according to different abstractions. The order of magnitude divides the question into different realities as mediated to the observer by instruments. To analyze the existence of the objects under observation, the observer needs instruments that are specific to an order of magnitude. </i><br><br>
+Yuk Hui then take the duality of light as an example. With different apparatus of observation, light can be wave, also can be particle. <br>
+<i>&emsp;&emsp;This is the core idea of Bachelard’s concept of phenomenotechnics. For each order of magnitude, we cannot penetrate fully into the object, but we should rather ask, what can we neglect? — for “that which we can neglect, we should neglect.”</i><br><br>
+Move on to Simondon, a nuanced difference between Simondon and Bachelard is that<br>
+<i>&emsp;&emsp; [f]or Simondon, the technical apparatus– instrument is not only the medium that allows us to observe different levels of depth of a phenomenon but also a tool that bridges two different orders of magnitude.</i><br>
+Overall, underlining the method of orders of magnitude, relations are understood, for relations are extendable from one system to another, from one magnitude to another.<br><br>
+With the brief explanation on what Yuk Hui means by the order of magnitude, we can touch on the discussion on Ontology and Ontologies, which can be articulated as two orders of magnitude when concerning existence. The origin of the word ontology in Greek is from these two parts, on and logos, meaning “to be” and “to talk about”. In his book, Yuk Hui uses Ontology with capital O to refer to what Heidegger calls the fundamental ontology, and ontologies refers to the conceptualization used in information science. Despite Heidegger’s criticism on ontologies, which mainly takes ontologies as metaphysical oblivion of existence, ontologies is still lying at the core of the construction of digital objects. For Heidegger, metaphysics has left the question of Being unquestioned, while only paying attention to ontologies. <br><br>
+<i>&emsp;&emsp;Ontologies are what make digital objects rather than merely data. Ontologies are productive, like Kant’s categories. Categories capture data and organize them in an order that unifies the manifold elements of their presence. Analogically, ontologies give a machine the ability to recognize and operate the object as a unity instead of as random data.</i><br><br>
+Yuk Hui showed two movements now taking place in parallel in the digital milieu around the question of objects, the objectification of data, and the dataification of objects. His discussion is deployed with inquiries in HTML, XML, web markup languages. <br><br>
+<i>&emsp;&emsp;Ontologies are still going to be significant for this stage of the development of the Web and other applications. These ontologies also become the source of relations. That is to say, they are not merely representations.</i><br><br>
+So going beyond this, he further developed more insightful arguments later in a section titled Interobjective Relations, Chapter 4 The Time of Technical System, Part 2 Relations, which I understand as one of the most important part in his book<br><br>
+Since it is crucial, I propose to take a pause here. It is worth of considering why he call it interobjectivity relation. If we translate Heidegger’s jug example mentioned above in a more abstract way, the notion of empty set can be helpful here. In set theory, an empty set, commonly denoted by the symbol ∅, simply means a set without any elements. In terms of measurement, it is not zero but empty, or no measurement. The distinction here is that a set with one element 0 has the measurement of 0, which is a real number, not empty. Therefore, the empty set may also be called the void set. Here is the crucial part: the idea of empty set matters in set theory for its relations to other sets. Some simple ones are: <br><br>
+&emsp;&emsp;The empty set ∅ is a subset of any set, that is it always holds that:<br>
+&emsp;&emsp;&emsp;&emsp;∅ ⊂ A<br>
+&emsp;&emsp;The set subtraction of a set A minus the empty set ∅, is the set A, that is:<br>
+&emsp;&emsp;&emsp;&emsp;A \ ∅ = A<br><br>
+This is how I understand why Yuk Hui put his effort on the discussion of interobjectivity relations. He started with this example, a Guimbal turbine using a river as its drive as well as its cooling agent. The river here not only is the external milieu for the engine, but it also establishes relations with it, for instance, the contact surfaces where they exchange heat. “This relation is materialized in the realization of the engine. In digital objects, we see another type of materialization, through virtual relations determined by representations and controlled by automation.” He, then, take the development of markup language, from GML to HTML and XML, as a further example. All these languages, or more preciously, web ontologies, were invented to solve the problem of incompatibility between different software systems while they are computing the same object. <br><br>
+<i>&emsp;&emsp;Interobjectivity is a reality as well as a constantly motivated (improved) medium that can resolve the incompatibility between different systems (including human and technical systems).</i><br><br>
+For this core understanding, he refers to a re-interpretation of Heidegger’s article The Thing, which we already mentioned above. Heidegger proposed to go back to The Thing, which is not the object that we contemplate by using our everyday categories. Instead, he provoked a new set of categories to unfold the thingness of a thing. For Yuk Hui’s understanding: <br><br>
+<i>&emsp;&emsp;Heidegger shows that thingness can only be thought in terms of relations pertinent to its milieu; there is no longer objectivity as such but rather interobjectivity. This interobjectivity is characterized by the fourfold. </i><br><br>
+<i>&emsp;&emsp;Gathering characterizes interobjectivity according to the technicity of its epoch. The thing, here a jug, that is also a technical object brings other things together from a distance. In this setting of the fourfold, there is neither subject nor object; there is only Dasein, the existence, who exists among other beings as part of the gathering. </i><br><br>
+Discussions above can be extended to digital objects in general, which concerns the notion of information and data. That needs us to put the materialism notion (or the notion of Object which has a long history in philosophy) aside for a while and approach digital images through the term “information”. <br><br>
+It is surprising that how rarely the term information is defined when we people place arguments on digital objects. What is information then? In the Oxford dictionary, information is defined as facts that tell you something about a situation, person, event etc. This definition depends on the meaning of fact. A piece of information that is known to be true, that’s how fact is defined in the same dictionary. Through the definition in language, what information is, especially under digital milieu, remains unclear. It is necessary to extend our research to information science, since discussions are made possible thanks to achievements in this discipline. For Shannon, the key idea of measure of information depends on possibility. Messages that are unusual and not easily predicted carry more information than those that are deemed likely even before they are received. Information is quantified by considering the possibilities of various possible messages. A message with low possibility represents more information than one with high probability. For example, since cloudy weather in California has low probability, the message that it is cloudy represents a good deal of information. Once the probability p of a message is specified, the associated information can be defined.<br><br>
+&emsp;&emsp;The information associated with a message of probability p is:<br>
+&emsp;&emsp; &emsp;&emsp;I = log(1/p)<br><br>
+Here the log stands for logarithm, and any base can be used for the logarithm (e.g. the base e of natural logarithm, base 10, or base 2). Logarithms to the base 2 are used most often in information theory, and then the units are bits.<br><br>
+I will stop here since this definition is adequate for the discussions in this text, but it is also worth mentioning the idea of Entropy, because it is the deeper, more detailed way to explain information in modern science.<br><br>
+In terms of IT and modern science, Yuk Hui put his critique as below:<br>
+<i>&emsp;&emsp;Within computer science, a strong notion of the object is still lacking, because its use is mostly concerned with the production of data and the harvesting of correlations and patterns (especially in the case of Big Data). Engineering falls short in the sense that it limits its understanding of digital objects to a set of structures for representation (in the sense that form is understood in hylomorphistic thinking), that is, to practical applications. By the same token, reflections on digital media in recent decades have focused on the digital and on information, and increasingly on data, while the notion of the digital object is still to be elucidated. In short, digital objects are conceived as pragmatic engineering questions or as phenomena of the digital, whereas their thinghood and their existential status have rarely been brought into question.</i><br><br>
+This modern IT view of information is highly related to probability theory and statistics, which means the quantity and quality is highly dependent on the context that gives meaning to the p - possibility. Context, concerns ontologies we mentioned above for the reason the p must be based on specific event, back to Heidegger’s jug example again, it is the water, the liquid that the jug holds. Therefore, what Heidegger called the thing, further the fundamental Ontology with capital O, remains untouched. One possible interpretation here can be that Heidegger somehow wanted to go beyond human centralism. Can the context, the information go on without a human body? Can the void go on without the jug?<br><br>
+In Inhuman, Lyotard he tried to go beyond an anthropocentric way of thinking and wrote in chapter one <i>Can Thought Go On Without A Body?</i><br>
+<i>&emsp;&emsp;But as Dreyfus argues, human thought doesn’t think in a binary mode. It doesn’t work with units of information(bits), but with intuitive, hypothetical configurations. It accepts imprecise, ambiguous data that don’t seem to be selected according to pre-established codes or readability. It doesn’t neglect side effects or marginal aspects of a situation. It isn’t just focused, but lateral too. Human thought can distinguish the important from the unimportant without doing exhaustive inventories of data and without testing the importance of data with respect to the goal pursued by a series of trials and errors.</i><br><br>
+</p>
+<p style="font-size: 18px;"><b>Why there is nothing rather than something? It is about the void.</b></p>
+<p>
+    Back to the question concerning representation that we raised at the very begining: Why there is something rather than nothing. We could ask in the reversed way: Why there is nothing rather than something? For L’Yvonnet,<i> “it is a radical way of taking one’s leave of metaphysics.” </i><br><br>
+    In the foreword of Baudrillard’s writing Why Hasn’t Everything Already Disappeared? He wrote: <br>
+    <i>&emsp;&emsp; “The focus is not now on being, but on the nothing”, Macedonio Fernandez, the Argentinian writer and friend of Borges, had already taken the exploration of the nothing to great lengths, […] Nihilism? No, nihilism is preciously the forgetting of nothing […] This is not a contrary metaphysics, but the contrary of a metaphysics. </i><br><br>
+    In this short text, Baudrillard wrote in 2007, he noted:<br>
+    <i>&emsp;&emsp;The traditional photography is an image produced by the world, which, thanks to the medium of film, still involves a dimensional of representation. </i><br>
+    <i>&emsp;&emsp;The digital image is an image that comes straight out of the screen and becomes submerged in the mass of all the other images from screens. It is of the order of flow and is a prisoner to the automatic operation of the camera.</i><br><br>
+    What he claims here 1) “digital images that come straight out of the screen”, in this way, seems not that different from the ‘traditional images” that come straight out of paper. And 2) I do agree that digital images can be flow of data, but it might be not accurate to say that it is out of automation of the camera, for the reason that cameras, as a technical object, is invented and operated by human, the automation won’t be effective without human initiative. Let along, in Yuk Hui’s argument, information is not equivalent to data, or random data. And, as we already discussed above, the data-information approach has its limits. From film to digital, what has changed? The digital camera, using CMOS as its apparatus to sense lights, materially is no different from those using film. The point here is, what makes the digital images so different from the traditional is the way they stored, distributed, and communicated, it is the digital milieu, in which it exists.<br><br>
+    At the opening of his book, On the existence of digital objects, Yuk Hui writes: “Humans have always lived in a hybrid environment surrounded by artificial and natural objects.” The artificial and the natural are not two separate realms. The artificial and the natural constitute a dynamic system that conditions human experience and existence. Here we can recall Yuk Hui’s reading on Heidegger’s <i>The Thing: “Heidegger shows that thingness can only be thought in terms of relations pertinent to its milieu; there is no longer objectivity as such but rather interobjectivity. This interobjectivity is characterized by the fourfold.”</i> <br><br>
+    On interobjectivity relations and the creation of systems, Yuk Hui conclude:<br>
+    <i>&emsp;&emsp;Digital objects concretize interobjective relations and allow a system to be established: this can probably be understood as the vision of the semantic web or a web to come. They not only connect things together but also concretize time in a topological form that one can navigate. Within the digital milieu, we are living in topological temporalities that become more and more explicit and predictable. Time becomes affective, not only because it gives existential relations, but also because it becomes more and more discursive and precise.</i><br><br>
+    This claim opens more space for thinking rather than a closure. After all, we have not touched the language-logic of digital objects.<br><br>
+</p>    
+<p style="font-size: 18px;"><br><br><b>Reference</b></p>
+<p>
+    Baudrillard, Jean, Alain Willaume, and Chris Turner.<i> Why Hasn’t Everything Already Disappeared? </i>. London: Seagull Books, 2016.<br><br>
+Bazin, André. “THE ONTOLOGY OF THE PHOTOGRAPHIC IMAGE.” <i>What Is Cinema? Volume I.</i> Berkeley: University of California Press, 2019. 9–16.<br><br>
+Heidegger, Martin, and Albert Hofstadter.<i> Poetry, Language, Thought .</i> New York: Perennical Classics, 2001.<br><br>
+Hui, Yuk. <i>On the Existence of Digital Objects .</i> Minneapolis: University of Minnesota Press, 2016.<br><br>
+Hui, Yuk. “What Is a Digital Object?” <i>Metaphilosophy </i>43.4 (2012): 380–395.<br><br>
+Luenberger, David G. <i>Information Science .</i> Princeton, N.J: Princeton University Press, 2006. Print.<br><br>
+Pereyra, Nicolas A.<i> Set Theory for Physicists .</i> San Rafael [California] (40 Oak Drive, San Rafael, CA, 94903, USA): Morgan & Claypool Publishers, 2019.<br><br>
+Shannon, C. “A Mathematical Theory of Communication.”<i> Mobile computing and communications review </i>5.1 (2001): 3–55.<br><br>
+
+</p>
+</div>
+
+<!-- footer -->
+<div class="footer">
+  <p>© 2021 Dai, Gu Jie All Rights Reserved</p>
+</div>
+
+
+<script>
+
+// play music
+function play() {
+        var audio = document.getElementById("audio");
+        audio.play();
+      }
+
+
+</script>
+
+</body>
+</html> 
